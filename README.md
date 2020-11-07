@@ -1,8 +1,13 @@
-note:
-when the project is used on windows, the path should be changed in main.cpp and rendering_engine.cpp
-shaderFolder = "E:\\Desktop\\RBOT-master\\src\\";
-objects.push_back(new Object3D("E:\\Desktop\\RBOT-master\\data\\squirrel_demo_low.obj", 15, -35, 515, 55, -20, 205, 1.0, 0.55f, distances));
-frame = imread("E:\\Desktop\\RBOT-master\\data\\frame.png");
+#note:
+
+#when the project is used on windows, the path should be changed in main.cpp and rendering_engine.cpp
+
+#shaderFolder = "E:\\Desktop\\RBOT-master\\src\\";
+
+#objects.push_back(new Object3D("E:\\Desktop\\RBOT-master\\data\\squirrel_demo_low.obj", 15, -35, 515, 55, -20, 205, 1.0, 0.55f, distances));
+
+#frame = imread("E:\\Desktop\\RBOT-master\\data\\frame.png");
+
 # RBOT: Region-based Object Tracking
 
 RBOT is a novel approach to real-time 6DOF pose pose estimation of rigid 3D objects using a monocular RGB camera. The key idea is to derive a region-based cost function using temporally consistent local color histograms and optimize it for pose with a Gauss-Newton scheme. The approach outperforms previous methods in cases of cluttered backgrounds, heterogenous objects, and occlusions. The proposed histograms are also used as statistical object descriptors within a template matching strategy for pose recovery after temporary tracking loss e.g. caused by massive occlusion or if the object leaves the camera's field of view. These descriptors can be trained online within a couple of seconds moving a handheld object in front of a camera.
